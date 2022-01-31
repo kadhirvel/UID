@@ -1,0 +1,27 @@
+<div style="padding:20px; background-color: aliceblue;">
+    <div class="row homeParent">
+        <div class="row homediv">HOME</div>
+        <div class="row homedesc">Home Page description</div>
+    </div>
+
+</div>   
+<!-- approach 1 - to render table data using angular ngFor. Blogs details table-->
+<div class="row flex-container" >
+    <div *ngFor="let data of blogs;">
+    <div class="col child">
+        <div class="row childNum">{{data.blogID}}</div>
+        <div class="row childDesc">{{data.title}}</div>
+    </div> 
+</div>
+</div>
+<div class="row loremDesc">Recent Blogs</div>
+<div class="row flex-container" style="padding-left: 8px;
+padding-right: 8px;">
+<div *ngFor="let blog of blogs;">
+    <div class="col childLorem">
+        <div class="row childDescLOrem"><img src="{{blog.imageUrl}}" alt="well image"></div>
+        <div class="row childNumLorem">Lorem Epsum</div>
+        <div class="row childDescLOrem">{{blog.desc}}  </div>
+    </div>
+</div>
+</div>

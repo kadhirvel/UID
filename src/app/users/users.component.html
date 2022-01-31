@@ -1,0 +1,17 @@
+<div style="padding:20px;">
+    <div class="row homeParent">
+        <div class="row homediv">Users</div>
+        <div class="row homedesc">Total User:6</div>
+    </div>
+
+</div>
+<div class="row flex-container">
+    <div *ngFor="let usr of user;">
+        <div class="col child">
+            <a><img class="imgUsers" src="{{usr.imageUrl}}" />
+            </a>
+            <div class="row childNum">{{usr.name}}</div>
+            <div class="row childDesc">{{usr.Desc}}</div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,68 @@
+// sample reusable properties
+$textColor: #668094; 
+$pageBackground: #f0f5fb;
+$pageWhite: white;
+.homeParent
+{
+    height: auto;
+    min-height: 70px;
+    background: $pageWhite;
+    padding: 10px;
+    border: 1px solid $pageWhite;
+    border-radius: 5px;
+}
+.homediv
+{
+    padding: 10px;
+    font-weight: 600;
+    color: $textColor;
+}
+.homedesc
+{
+    padding: 5px 10px;
+    background: $pageBackground;
+    font-size: 15px;
+    color:$textColor;
+}
+body
+{
+    background: $pageBackground;
+}
+.child
+{
+    flex-grow: 1;
+    height: auto;
+    background: $pageWhite;
+    padding: 80px 20px 20px 20px;
+    margin: 8px;
+    border-radius: 6px;
+    border: 1px solid $pageWhite;
+    position:relative;
+}
+
+.flex-container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.childNum
+{
+    font-size: 20px; 
+    text-align:center;
+    color: #007eff;
+}
+.childDesc
+{
+    font-size: 12px; 
+    color: $textColor;
+    text-align:center;
+}
+.imgUsers
+{
+    width: 100px;
+    position: absolute;
+    left: 30%;
+    top: -12%;
+}

@@ -1,0 +1,15 @@
+<div class="example-container mat-elevation-z8">
+    <!-- Approach-2 to render table data using Mat table. it is a mat table to render user name, blog comments,  user image-->
+    <mat-table #table [dataSource]="dataSource">
+        <ng-container matColumnDef="position">
+            <mat-header-cell *matHeaderCellDef class="row loremDesc"> Recent Blogs. </mat-header-cell>
+            <mat-cell *matCellDef="let element">
+                <div class="row childDescLOrem"><img src="{{element.imageurl}}" alt="well image"></div>
+                <div class="row childNumLorem">{{element.name}}</div>
+                <div class="row childDescLOrem">{{element.desc}}</div>
+            </mat-cell>
+        </ng-container>
+        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+    </mat-table>
+</div>

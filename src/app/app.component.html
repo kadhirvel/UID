@@ -1,0 +1,38 @@
+<mat-toolbar class="mat-elevation-z8">
+  <button mat-icon-button *ngIf="sidenav.mode === 'over'" (click)="sidenav.toggle()">
+      <mat-icon *ngIf="!sidenav.opened">
+          menu
+      </mat-icon>
+      <mat-icon *ngIf="sidenav.opened">
+          close
+      </mat-icon>
+  </button>
+  LOREM PSUM
+</mat-toolbar>
+
+<mat-sidenav-container>
+  <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8"> 
+      <h4 class="name">Menu</h4> 
+      <mat-divider></mat-divider>
+
+      <button routerLink="/home" mat-button class="menu-button" (click)="sidenav.toggle()">
+          <mat-icon>home</mat-icon>
+          <span (click)="sidenav.toggle()">Home</span>
+      </button>
+      <button routerLink="/users" mat-button class="menu-button"  (click)="sidenav.toggle()">
+          <mat-icon>person</mat-icon>
+          <span (click)="sidenav.toggle()">Users</span>
+      </button>
+      <button routerLink="/blogs" mat-button class="menu-button" (click)="sidenav.toggle()">
+          <mat-icon>info</mat-icon>
+          <span (click)="sidenav.toggle()">Blogs</span>
+      </button> 
+  </mat-sidenav>
+  <mat-sidenav-content>
+      <div class="content mat-elevation-z8">
+        <router-outlet></router-outlet>
+      </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+ 

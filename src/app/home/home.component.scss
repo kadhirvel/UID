@@ -1,0 +1,85 @@
+// sample reusable properties
+$textColor: #668094; 
+$pageBackground: #f0f5fb;
+$pageWhite: white;
+.homeParent
+{
+    height: auto;
+    min-height: 40px;
+    background: $pageBackground; 
+    border: 1px solid $pageWhite;
+    border-radius: 5px;
+}
+.homediv
+{ 
+    font-size: 16px;
+}
+.homedesc
+{
+    padding: 5px 10px; 
+    font-size: 12px;
+    color: $textColor;
+}
+body
+{
+    background: aliceblue;
+}
+.child
+{
+    flex-grow: 1;
+    height: auto; 
+    padding: 20px 20px 20px 20px;
+    margin: 8px;
+    border-radius: 6px;
+    border: 1px solid $pageWhite;
+}
+
+.flex-container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.childNum
+{
+    font-size: 25px;
+    font-weight: 600;
+    color: black;
+}
+.childDesc
+{
+    font-size: 15px; 
+    color: $textColor;
+}
+.childLorem
+{
+    flex-grow: 1;
+    height: auto;
+    background: $pageWhite;
+    padding: 20px 20px 20px 20px;
+    border-radius: 6px;
+    border: 1px solid $pageWhite;
+}
+.childNumLorem
+{
+    font-size: 25px; 
+    padding: 20px 0px;
+    color:black;
+}
+.childDescLOrem
+{
+    font-size: 15px; 
+    color: $textColor;
+}
+.loremDesc
+{
+    background: $pageWhite;
+    border-bottom: 1px solid lightgrey;
+    padding: 10px 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: $textColor;
+}
